@@ -28,8 +28,15 @@ let PromiseOrderFood = new Promise((resolve, reject)=>{
    }
 })
 
-let promise = new Promise((resolve, reject) => {
-   
+
+let promise1 = new Promise((resolve, reject) => {
+   // I have a process of baking pizza, panding, panding, pending
+   let isPizzaReady = true
+   if (isPizzaReady == true) {
+      resolve("pizza")
+   } else {
+      reject("Sorry No pizza")
+   }
 })
 
 

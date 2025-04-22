@@ -8,9 +8,21 @@
 
 let p2 = fetch ("https://jsonplaceholder.typicode.com/users")
 
-p2
-  .then((response)=>{
-    return response.json()
-  })
-  .then((data)=>{console.log(data)})
-  .catch((error)=>{console.log(error)})
+// p2
+//   .then((response)=>{
+//     return response.json()
+//   })
+//   .then((data)=>{console.log(data)})
+//   .catch((error)=>{console.log(error)})
+
+
+
+let p1 = fetch ("https://jsonplaceholder.typicode.com/users")
+
+p1
+.then((data)=>{
+  console.log (data)
+})
+.catch((error)=>{
+  console.log (error)
+})

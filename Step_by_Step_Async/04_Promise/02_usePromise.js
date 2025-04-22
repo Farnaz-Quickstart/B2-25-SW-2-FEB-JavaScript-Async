@@ -15,11 +15,7 @@ let isFoodReady
 
 let PromiseOrderFood = new Promise((resolve, reject)=>{
    // Process of preparing your food
-   // step 1 of preparing to food
-   // step 2 of preparing to food
-   // step 3 of preparing to food
-   // step 4 of preparing to food
-   isFoodReady = true
+   isFoodReady = false
    if (isFoodReady == true) {
     resolve("Here is your pizza!")
    } else {
@@ -30,15 +26,17 @@ let PromiseOrderFood = new Promise((resolve, reject)=>{
 // Consuming the Promise using .then() and .catch()
 
 PromiseOrderFood
-  .then(
-      // This block runs if the promise is RESOLVED (success)
-      // You got your pizza 🍕
-      (message)=>{
-        console.log("✅ Success:", message);
-      })
-  .catch(
-    // This block runs if the promise is REJECTED (failure)
-    // Something went wrong in the kitchen 😢
-    (error)=>{
-      console.log("❌ Error:", error);
-    })
+  .then((data)=>{
+    console.log (data)
+    console.log ("task2")
+    console.log ("Eating pizza")
+  })
+  .catch((error)=>{
+    console.log (error)
+  })
+
+
+
+
+
+
