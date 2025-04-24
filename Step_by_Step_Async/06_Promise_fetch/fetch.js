@@ -21,6 +21,9 @@ let p1 = fetch ("https://jsonplaceholder.typicode.com/users")
 
 p1
 .then((data)=>{
+  return data.json()
+})
+.then ((data)=>{
   console.log (data)
 })
 .catch((error)=>{
